@@ -1,0 +1,40 @@
+@import 'variables';
+
+.navbar {
+  background-color: $secondary-bg;
+
+  .nav-brand {
+    color: $accent-color;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: -1px 0 $brand-outline, 0 1px $brand-outline, 1px 0 $brand-outline, 0 -1px $brand-outline;
+
+    &:hover {
+      color: lighten($accent-color, 10%);
+    }
+  }
+
+  .nav-main-links, .nav-auth-links {
+    a {
+      font-size: 1.5rem;
+      color: $accent-color;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten($accent-color, 10%);
+      }
+    }
+  }
+
+  .nav-dropdown {
+    .dropdown-item {
+      color: $accent-color;
+
+      &:hover {
+        color: lighten($accent-color, 10%);
+        background-color: darken($secondary-bg, 5%);
+      }
+    }
+  }
+}
+
